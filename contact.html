@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="George Poelcher III">
+        <meta name="description" content="TThis is the contact page for The Mountainside Villa. Those who are interested in potentially visiting, have questions or need assistance in booking/planning can fill the form below to contact our staff.">
+
+        <link href="cssobfuscated.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/ugn7del.css">
+
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+        <title>The Mountainside Villa | Contact</title>
+    </head>
+
+    <body>
+        <header>
+            <h1><a href="index.html">The Mountainside Villa</a></h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Accommodations</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>    
+
+        <main id="contact-main">
+            <div>
+                <h2>Contact Us</h2>
+                <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us! Required fields marked with a *</p>
+                <img src="images/swiss-peak.jpg"  height="455" width="350" alt="An image of a mountainside view by a lake. Several lodges sit at the edge of the lake, the mountain range positioned behind them. A light fog covers the base of the mountain range and several sunset-stained clouds float above the mountain range at dusk.">
+            </div>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+                <label for="name">Full Name*</label>
+                <input type="text" name="name" id="name" required>
+
+                <label for="email">Email*</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="phone">Phone Number*</label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" required>
+                
+                <fieldset>
+                    <legend>Preferred Contact Method*</legend>
+
+                    <label for="email-pref">
+                        <input type="radio" name="contact-pref" id="email-pref">
+                        Email
+                    </label>
+
+                    
+                    <label for="phone-pref">
+                        <input type="radio" name="contact-pref" id="phone-pref" checked>
+                        Phone        
+                    </label>
+                </fieldset>
+
+                <label for="comments">Comments*</label>
+                <textarea name="comments" id="comments" rows="4" cols="50" required></textarea>
+
+                <input type="submit" name="form-submit" id="form-submit" value="Submit">
+            </form>
+        </main>
+
+        <footer>
+            <p>Copyright ©2023 - The Mountainside Villa</p>
+            <p>This site is for educational purposes only</p>
+        </footer>
+    </body>
+</html>
